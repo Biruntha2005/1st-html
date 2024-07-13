@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form inputs</title>   
+     <h1>MY APPLICATION </h1>  
+      <h1  textalign=center></h1>
+</head>
+<body>
+
+    <form>          
+        <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+          <div id="form"></div>
+        <fieldset>
+          <legend>personal:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="enter your frist name"><br>
+        <label for="lname">Last name:</label><br>
+        <textarea id="lname" name="lname" rows="2"></textarea><br>
+        <lable for="dob">DATE OF BIRTH:</lable><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd" placeholder="enter your password"><br>
+        </fieldset>
+         <fieldset>
+            <legend>address:</legend>
+        <label for="state">what is your state name:</label><br>
+        <select name="state" id="state">
+        <option value="1">Andrapradesh</option>
+        <option value="2">Bihar</option>
+        <option value="3">chattisgarh</option>
+        <option value="4">Goa</option>
+        <option value="5">Haryana</option>
+        <option value="6">Jarkhand</option>
+        <option value="7">Tamil nadu</option>
+        </select><br>
+        <lable for="district">what is your district name:</lable><br>
+        <select name="district" id="district">
+            <option value="volvo">karaikudi</option>
+            <option value="saab">sivagangai</option>
+            <option value="mercedes">thoothukudi</option>
+            <option value="audi" selected>ramanathapuram</option>
+            <option value="mercedes">thiruvadanai</option>
+            <option value="audi">kallal</option>
+        </select><br>
+        <label for="pincode">what is your district pincode:</label><br>
+        <select name="pincode" id="pincode">
+            <option value="1">630001</option>
+            <option value="2">630561</option>
+             <option value="3">628001</option>
+             <option value="4">623519</option>
+             <option value="5">623407</option>
+             <option value="6">630305</option>
+        </select><br>
+         </fieldset>
+
+     <!--   <form action="/action_page.php"> -->
+    <!-- value giving here  <input type="text" id="fname" name="fname" value="John"><br> -->
+      <!--     <label for="lname">Last name:</label><br>-->
+    <!--        <input type="text" id="lname" name="lname" value="Doe"><br><br> -->
+            <form action="/action_page.php" nonvalidate>
+                <h2>choose one language you know</h2>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+         <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <h2>which type of vehicle you have </h2>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor"><br>
+  <input type="button" onclick="alert('welcome to forms!')" value="Click Me!" textalign = center><br>
+  <text align:center;></text><input type="submit" value="Submit"><br>
+  <input type="reset" value="Reset"  textalign=center><br>
+
+
+      </form>
+      
+</body>
+</html>
